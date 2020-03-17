@@ -17,20 +17,20 @@ void main()
 
 for(int i=0; i<app ; i++)
 {
-   addStacks c = new addStacks(); 
-   c.m1(); 
+   addStacks c = new addStacks();   	// creating object for addStack()
+   c.m1(); 				//calling method m1()
 }
 
-print("Do you want the content of all users:[y/n]?");
+print("Do you want to view the content of all users:[y/n]?");
  var db = stdin.readLineSync();
- 
- 
+
+
 if( db == 'y')
 {
 for(int i=0;i<cnt;i++)
 {
 print("\n");
-print("User number");
+print("User number:");
 print(i+1);
 print("idcode:"); 
 print(ilt[i]);
@@ -45,6 +45,8 @@ print(tt);
 }
 
 } 
+
+
 class addStacks 		//addStack() class
 { 
    void m1()
@@ -58,8 +60,8 @@ class addStacks 		//addStack() class
  ilt2[cnt]=field;
 
 
- setMentorOrLearner d = new setMentorOrLearner(); 
-   d.m2(); 
+ setMentorOrLearner d = new setMentorOrLearner();    	// creating object for setMentorOrLearner()
+   d.m2(); 						//calling method m2() 
 
 } 
 }  
@@ -86,15 +88,15 @@ if( idc < 100 && set =='M' || idc < 100 && set =='m')
   men=men+1;
  cnt=cnt+1;
 
- setAvailableTime e= new setAvailableTime();
- e.m3(men);
+ setAvailableTime e= new setAvailableTime();   	// creating object for setAvailableTime ()
+ e.m3(men);	 				//calling method m3()
 } 
 else if(idc >= 100 && set =='L' || idc >= 100 && set =='l')
 {
  cnt=cnt+1;
 
- getMentor f = getMentor(); 
-   f.m4(null,men);
+ getMentor f = getMentor(); 	   	// creating object for getMentor() 
+   f.m4(null,men);	 		//calling method m4()
 
 }
 else
@@ -116,8 +118,8 @@ void m3(int me)
  int time = int.parse(stdin.readLineSync());		//Enter your time in minutes
  tt=tt+time;
 
- getMentor f = getMentor(); 
-   f.m4(time,me);
+   getMentor f = getMentor(); 	   	//creating object for getMentor()
+   f.m4(time,me);	 		//calling method m4()
 
 }
 }
