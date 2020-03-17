@@ -17,8 +17,8 @@ void main()
 
 for(int i=0; i<app ; i++)
 {
-   addStacks c = new addStacks();   	// creating object for addStack()
-   c.m1(); 				//calling method m1()
+   addStacks c = new addStacks();   	
+   c.m1(); 				
 }
 
 print("Do you want to view the content of all users:[y/n]?");
@@ -60,8 +60,8 @@ class addStacks 		//addStack() class
  ilt2[cnt]=field;
 
 
- setMentorOrLearner d = new setMentorOrLearner();    	// creating object for setMentorOrLearner()
-   d.m2(); 						//calling method m2() 
+ setMentorOrLearner d = new setMentorOrLearner();    
+   d.m2(); 						
 
 } 
 }  
@@ -88,15 +88,15 @@ if( idc < 100 && set =='M' || idc < 100 && set =='m')
   men=men+1;
  cnt=cnt+1;
 
- setAvailableTime e= new setAvailableTime();   	// creating object for setAvailableTime ()
- e.m3(men);	 				//calling method m3()
+ setAvailableTime e= new setAvailableTime();   	
+ e.m3(men);	 			
 } 
 else if(idc >= 100 && set =='L' || idc >= 100 && set =='l')
 {
  cnt=cnt+1;
 
- getMentor f = getMentor(); 	   	// creating object for getMentor() 
-   f.m4(null,men);	 		//calling method m4()
+ getMentor f = getMentor(); 	    
+   f.m4(null,men);	 	
 
 }
 else
@@ -118,8 +118,8 @@ void m3(int me)
  int time = int.parse(stdin.readLineSync());		//Enter your time in minutes
  tt=tt+time;
 
-   getMentor f = getMentor(); 	   	//creating object for getMentor()
-   f.m4(time,me);	 		//calling method m4()
+   getMentor f = getMentor(); 	   	
+   f.m4(time,me);	 		
 
 }
 }
