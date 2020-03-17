@@ -120,7 +120,7 @@ void m3(int me)
 
 class getMentor extends setAvailableTime		//getMentor() class
 {
-void m4(int t,int m)
+void m4(int t,int m)					// With time and stack as parameters
 {
  print("currently available mentors are:");
 print(m);
