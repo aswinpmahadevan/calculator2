@@ -21,13 +21,16 @@ for(int i=0; i<app ; i++)
    c.m1(); 
 }
 
-print("Do you want the cont of all users:[y/n]?");
+print("Do you want the content of all users:[y/n]?");
  var db = stdin.readLineSync();
+ 
+ 
 if( db == 'y')
 {
 for(int i=0;i<cnt;i++)
 {
-print("Aplicant no");
+print("\n");
+print("User number");
 print(i+1);
 print("idcode:"); 
 print(ilt[i]);
@@ -35,6 +38,7 @@ print("Name:");
 print(ilt1[i]);
 print("field:");
 print(ilt2[i]);
+print("\n");
 }
 print("Total time taken by the mentors is:");
 print(tt);
