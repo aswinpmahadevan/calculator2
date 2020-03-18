@@ -2,12 +2,13 @@ import 'dart:io';
 import 'dart:convert';
 
 int men=0;
-int idc;
+int idc,i;
 var ilt = new List(100);
 var ilt1 = new List(100);
 var ilt2 = new List(100);
 int cnt=0;
 int tt=0;
+addStacks c = new addStacks();	// creating object for addStack()
 
 void main() 
 { 
@@ -15,9 +16,9 @@ void main()
  int app = int.parse(stdin.readLineSync());
 
 
-for(int i=0; i<app ; i++)
+for(i=0; i<app ; i++)
 {
-   addStacks c = new addStacks();   	// creating object for addStack()
+      	
    c.m1(); 				//calling method m1()
 }
 
@@ -27,7 +28,7 @@ print("Do you want to view the content of all users:[y/n]?");
 
 if( db == 'y')
 {
-for(int i=0;i<cnt;i++)
+for(i=0;i<cnt;i++)
 {
 print("\n");
 print("User number:");
@@ -60,8 +61,8 @@ class addStacks extends setMentorOrLearner	//addStack() class
  ilt2[cnt]=field;
 
 
- setMentorOrLearner d = new setMentorOrLearner();    	// creating object for setMentorOrLearner()
-   d.m2(); 						//calling method m2() 
+
+   c.m2(); 						//calling method m2() 
 
 } 
 }  
@@ -88,15 +89,15 @@ if( idc < 100 && set =='M' || idc < 100 && set =='m')
   men=men+1;
  cnt=cnt+1;
 
- setAvailableTime e= new setAvailableTime();   	// creating object for setAvailableTime ()
- e.m3(men);	 				//calling method m3()
+
+ c.m3(men);	 				//calling method m3()
 } 
 else if(idc >= 100 && set =='L' || idc >= 100 && set =='l')
 {
  cnt=cnt+1;
 
- getMentor f = getMentor(); 	   	// creating object for getMentor() 
-   f.m4(null,men);	 		//calling method m4()
+
+   c.m4(null,men);	 		//calling method m4()
 
 }
 else
@@ -118,8 +119,8 @@ void m3(int me)
  int time = int.parse(stdin.readLineSync());		//Enter your time in minutes
  tt=tt+time;
 
-   getMentor f = getMentor(); 	   	//creating object for getMentor()
-   f.m4(time,me);	 		//calling method m4()
+
+   c.m4(time,me);	 		//calling method m4()
 
 }
 }
